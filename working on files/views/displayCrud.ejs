@@ -1,0 +1,42 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD</title>
+    <style>
+        table{
+        border-color:blue
+    }
+    </style>
+    
+</head>
+<body>
+    <form action="insert">
+        <center>
+            <input type="submit" value="insert">
+        </center>
+    </form>
+    <table border="3" cellpadding="0">
+        <thead>
+            <th>Id</th>
+            <th>UserID</th>
+            <th>Title</th>
+            <th>Body</th>
+        </thead>
+        <tbody>
+            <% for(let i=0;i<post.length;i++){%>
+                <tr>
+                    <td><%=post[i].userId%></td>
+                    <td><%=post[i].id%></td>
+                    <td><%=post[i].title%></td>
+                    <td><%=post[i].body%></td>
+                    <td><a href="delete?_id=<%=post[i]._id%>">delete</a></td>
+                    <td><a href="update?_id=<%=post[i]._id%>">update</a></td>
+                </tr>    
+            <%}%>
+        </tbody>
+        </tbody>
+    </table>
+</body>
+</html>

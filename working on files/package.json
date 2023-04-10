@@ -1,0 +1,19 @@
+{
+  "name": "internals",
+  "version": "1.0.0",
+  "description": "",
+  "main": "http-url.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "http": "^0.0.1-security",
+    "mongodb": "^4.9.1",
+    "url": "^0.11.0"
+  }
+}

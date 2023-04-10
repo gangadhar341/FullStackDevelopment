@@ -1,0 +1,46 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD</title>
+    <style>
+        table{
+            width: 80%;
+            border-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <form>
+            <h1>Bapatla Engineering College</h1>
+
+            <a href="insert">insert</a>
+        </form>
+    
+    <table border="3">
+        <thead>
+            <th>ID</th>
+            <th>UserID</th>
+            <th>Title</th>
+            <th>Body</th>
+            <th>Delete</th>
+            <th>Update</th>
+        </thead>
+        <tbody>
+            <%for(let i=0;i<post.length;i++){%>
+                <tr>
+                    <td><%=post[i].id%></td>
+                    <td><%=post[i].userId%></td>
+                    <td><%=post[i].title%></td>
+                    <td><%=post[i].body%></td>
+                    <td><a href="delete/<%=post[i]._id%>">delete</a></td>
+                    <td><a href="update?<%=post[i].id%>">update</a></td>
+                </tr>
+            <%}%>
+        </tbody>
+    </table>
+    </center>
+</body>
+</html>

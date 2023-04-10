@@ -1,0 +1,20 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <form action="updated">
+            <input type="hidden" name="_id" value="<%=doc._id%>">
+            ID:<input type="text" name="id" value="<%=doc.id%>"><br><br>
+            UserID:<input type="text" name="usid" value="<%=doc.userId%>"><br><br>
+            Title:<input type="text" name="title" value="<%=doc.title%>"><br><br>
+            Body:<input type="text" name="body" value="<%=doc.body%>"><br><br>
+            <input type="submit" value="submit">
+        </form>
+    </center>
+</body>
+</html>
